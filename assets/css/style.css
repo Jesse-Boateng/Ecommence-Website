@@ -6,20 +6,20 @@
 }
 
 .container{
-    background-image: url("/assets/images/new-assets-images/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/new-assets-images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     background-position:center center;
-    max-width: 100%;
     height: 100vh;
 }
+
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;  
+    padding: 20px; 
 }
 
 .list ul{
@@ -29,15 +29,14 @@
 
 .list li{
     font-family: 'poppins';
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     margin-right: 35px;
-    z-index: 2;
 }
 
 .nicons i{
-    margin-left: 10px;
-    font-size: 20px;
+    margin-left: 5px;
+    font-size: 25px;
     color: white;
 }
 
@@ -50,68 +49,230 @@ a:hover{
     color: chocolate;
 }
 
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0,0.62);
-}
-
 
 /* CSS for hero section */
 .hero{
     padding: 50px 20px;
-    width: 350px;
-    margin: auto;
+    width: 500px;
+    margin: 15% auto;
     text-align: center; 
     justify-content: center;
     line-height: 2.8rem;
     align-items: center;
-    background-color: rgb(255,255,255,0.72);
-    margin-top: 40%; 
+    background-color: rgba(255, 255, 255, 0.75); 
+
 }
+
 
 .new{
     font-family: 'poppins';
     font-weight: 400;
-    font-size: 30px;
-    
+    font-size: 30px;  
 }
 
 .shop{
     font-family: 'dosis';
     font-weight: 500;
     font-size: 20px;
-    text-decoration-line: underline;
+    color: black;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: transparent;
+    margin-top: 20px;
 }
 
-.nicons{
-    z-index: 2;
-}
-
-.wlogo{
-    z-index: 2;
+.shop:hover{
+    color: chocolate;
 }
 
 
-@media screen and (max-width: 600px){
+/* This is the Category section  */
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px 0px;
+}
+
+.category{
+    width: 47%;
+    padding: 7rem 2rem;
+}
+
+.cat{
+    background: url(../images/new-assets-images/furn.jpg) no-repeat center center /cover;
+    
+}
+
+.cat1{
+    background: url(../images/new-assets-images/bask.jpg) no-repeat center center /cover;
+
+}
+
+.col, .col1{
+    font-family: 'poppins';
+    font-weight: 300;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center; 
+    width: 50%;
+}
+
+
+.button1{
+    font-family: 'dosis';
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: black;
+    border-bottom: 0.5px solid black;
+    background: transparent;
+    margin-top: 20px;
+}
+
+
+/* The Products Section */
+
+.tt{
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: 400;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+
+}
+
+.div{
+    width: 23%;
+    padding: 7rem 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* Background Images and Overlays */
+
+.d1{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr1.png) no-repeat center center /cover;
+}
+
+.d2{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr2.png) no-repeat center center /cover;
+}
+
+.d3{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr3.png) no-repeat center center /cover;
+}
+
+.d4{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr4.png) no-repeat center center /cover;
+}
+
+.d5{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr5.png) no-repeat center center /cover;
+}
+
+.d6{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr6.png) no-repeat center center /cover;
+}
+
+.d7{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr7.png) no-repeat center center /cover;
+}
+
+.d8{
+    background: linear-gradient(rgba(52, 48, 48, 0.5), rgba(52, 48, 48, 0.5)), url(../images/new-assets-images/pr8.png) no-repeat center center /cover;
+}
+
+ button{
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 300;
+    background: transparent;
+    border: none;
+    color: white;
+    margin-top: 40px;
+    align-items: center;
+}
+
+
+h2{
+    font-family:'poppins';
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    padding: 0 30px;
+    line-height: 2rem;
+    align-items: center;
+}
+
+
+
+/* Media Queries for Tablet View */
+
+
+@media screen and (max-width: 912px){
+    .hero{
+        padding: 50px 30px;
+        width: 350px;
+        margin: 47% auto;
+    }
+
+    .div{
+        width: 30.5%;
+    }
+
+}
+
+/* Media Queries for Mobile View */
+
+@media screen and (max-width: 630px){
+
+    .hero{
+        padding: 50px 30px;
+        width: 350px;
+        margin: 53% auto;   
+    }
+
     .list ul{
         display: none;
     } 
-}
 
-@media screen and (min-width: 600px){
-    .hero{
-        justify-content: center;
-        line-height: 2.8rem;
-        align-items: center;
-        background-color: rgb(255,255,255,0.83);
-        padding: 50px 30px;
-        width: 500px;
-        margin: auto;
-        text-align: center; 
-        margin-top: 18%;   
+    .main{
+        gap: 2rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    
+    .category{
+        width: 100%;
+        padding: 5rem 2rem;
+    }
+
+    .col, .col1{
+        width: 50%;
+        text-align: center;
+    }
+    
+    .products{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .div{
+        width: 100%;
     }
 }
+
+
+
+
+
