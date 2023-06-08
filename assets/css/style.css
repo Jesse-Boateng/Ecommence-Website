@@ -143,13 +143,14 @@ a:hover{
 .products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     row-gap: 1.5rem;
+    padding: 1.5rem;
 
 }
 
 .div{
-    width: 23%;
+    width: 23.4%;
     padding: 7rem 2rem;
     text-align: center;
     align-items: center;
@@ -215,6 +216,96 @@ h2{
 }
 
 
+/* This is the News section */
+.recent{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.box{
+    height: 350px;
+    width: 32%;
+}
+
+.box1{
+    background: url('../images/new-assets-images/b1.jpg') no-repeat center center /cover;
+}
+
+.box2{
+    background: url('../images/new-assets-images/b2.jpg') no-repeat center center /cover;
+}
+
+.box3{
+    background: url('../images/new-assets-images/b3.jpg') no-repeat center center /cover;
+}
+
+
+.date{
+    font-size: 30px;
+}
+
+.month{
+    font-size: 12px;
+}
+
+
+.date-month{
+    height: 80px;
+    width: 80px;
+    background-color: #ffff;
+    border: 1px solid rgb(201, 198, 198);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dm{
+    padding: 8px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(201, 198, 198);
+}
+
+
+.mes p{
+    position: relative;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 14px;
+    margin: 20px;
+    top: 6rem;
+    
+}
+   
+
+.mes a{
+    position: absolute;
+    font-family: 'poppins';
+    font-weight: 500px;
+    font-size: 16px;
+    margin: 60px 20px;
+    text-decoration: underline;
+    color: black; 
+}
+
+
+
 
 /* Media Queries for Tablet View */
 
@@ -227,10 +318,20 @@ h2{
     }
 
     .div{
-        width: 30.5%;
+        width: 31.5%;
     }
 
+    .news{
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 0, 1.5rem;
+    }
+
+    .box{
+        width: 48%;
+    }
 }
+
 
 /* Media Queries for Mobile View */
 
@@ -268,6 +369,16 @@ h2{
     }
     
     .div{
+        width: 100%;
+    }
+
+    .news{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .box{
         width: 100%;
     }
 }
