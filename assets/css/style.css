@@ -443,7 +443,7 @@ h2{
     .news{
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     .box{
