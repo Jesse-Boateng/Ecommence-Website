@@ -292,8 +292,7 @@ h2{
     font-weight: 400;
     font-size: 14px;
     margin: 20px;
-    top: 6rem;
-    
+    top: 6rem;  
 }
    
 
@@ -307,11 +306,70 @@ h2{
     color: black; 
 }
 
+.footer{
+    background-color: #EFEFEF;
+    padding: 50px 100px;
+    margin: 40px 0 auto;
+    font-size: 16px;
+    font-family: 'poppins';
+    font-weight: 400;
+}
+    
+.fsection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 18px;
+
+}
+
+
+.p{
+    display: inline;
+    margin: 10px;
+    line-height: 40px;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+.fa-regular{
+    font-size: 20px;
+}
+
+
+.subs1{
+   width: 320px;
+   font-size: 16px;
+}
+
+#email{
+    padding: 12px;
+    width: 87%;
+    margin-top: 22px;
+    border:  0.4px solid rgba(0, 0, 0, 0.38);
+}
+
+.line{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    margin: 18px 0;
+}
+
+.fa-greater-than{
+    font-size: 14px;
+    padding: 14.5px 18px;
+    margin-left: -10px;
+    border: none;
+    background: #D9D9D9;
+}
+
+
 
 
 
 /* Media Queries for Tablet View */
-
 
 @media screen and (max-width: 912px){
     .hero{
@@ -327,11 +385,18 @@ h2{
     .news{
         flex-wrap: wrap;
         gap: 1.5rem;
-        padding: 0, 1.5rem;
+        padding: 0 1.5rem;
     }
 
     .box{
         width: 48%;
+    }
+
+    .footer{
+        background-color: #EFEFEF;
+        padding: 30px 2rem;
+        margin: 25px 0 auto;
+        
     }
 }
 
@@ -383,6 +448,23 @@ h2{
 
     .box{
         width: 100%;
+    }
+    
+    .fsection{
+        flex-direction: column;
+    }
+
+    .footer{
+        width: 100%;
+        padding: 2rem 1rem ;
+    }
+
+    .letter{
+        margin-top: 2.5rem;
+    }
+
+    .line{
+        margin-top: 40px;
     }
 }
 
